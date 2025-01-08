@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Moderador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="moderador-container">
+        <h2>Controle de Reagentes - Moderador</h2>
+        <form id="form-moderador">
+            <label for="senha-moderador">Digite a senha do moderador:</label>
+            <input type="password" id="senha-moderador" required>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Se senha estiver correta, mostrar opções adicionais -->
+        <div class="moderador-options" style="display: none;">
+            <div class="report-section">
+                <h3>Relatório de Utilização</h3>
+                <table>
+                    <tr>
+                        <th>Reagente</th>
+                        <th>Quantidade Usada</th>
+                    </tr>
+                    <!-- Os dados serão preenchidos dinamicamente -->
+                </table>
+            </div>
+            <div class="graph-section">
+                <h3>Gráfico de Utilização</h3>
+                <canvas id="usage-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="tecnico-container">
+        <h2>Controle de Reagentes - Técnico</h2>
+        <form id="form-tecnico">
+            <label for="reagente">Selecione o Reagente:</label>
+            <select id="reagente">
+                <option value="Reagente 1">Reagente 1</option>
+                <option value="Reagente 2">Reagente 2</option>
+            </select>
+            <label for="quantidade">Quantidade utilizada (g/ml):</label>
+            <input type="number" id="quantidade" step="any" required>
+            <button type="submit">Registrar Utilização</button>
+        </form>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
